@@ -3,3 +3,5 @@ npm-debug.log
 /**/*.js
 /**/*.js.map
 !systemjs.config.js
+!dev.js
+!prod.js
