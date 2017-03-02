@@ -1,0 +1,9 @@
+
+<select [(ngModel)]="selected" (ngModelChange)="userSelected($event)">
+  <option *ngFor="let user of users" [ngValue]="user" >{{user.name}}</option>
+</select>
+<ul>
+  <li *ngFor="let task of tasks;"><p>{{task.description}}<p><p>{{task.done}}
+  </p><button (click)="onClick(task)">Edit</button></li>
+</ul>
+<button (click)="create()">Add Task</button>

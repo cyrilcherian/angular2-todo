@@ -1,0 +1,23 @@
+<form [formGroup]="myForm" (ngSubmit)="editTask()">
+    <div>
+        <label for="name">Description</label>
+        <textarea rows="4" cols="50" type="text" name="description" id="description" [formControl]="description" [(ngModel)]="task.description"></textarea>
+        <div [hidden]="description.valid || description.untouched">
+            <div>
+                The following problems have been found with the task descrition:
+            </div>
+            <div [hidden]="!description.hasError('minlength')">
+                Descripton can not be shorter than 5 characters.
+            </div>
+            <div [hidden]="!description.hasError('required')">
+                Description is required.
+            </div>
+        </div>
+        <br>
+        <div>
+          <label for="name">Is Task Done?</label>
+          <input type="checkbox" name="done" id="done" [formControl]="done" [(ngModel)]="task.done">
+        </div>
+    </div>
+    <button type="submit">Edit Me</button>
+</form>
