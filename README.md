@@ -14,7 +14,7 @@ First, you need to make sure you install the dependencies:
 npm install
 ```
 
-Then we will
+Then we will put it on dev
 
 - compile our TypeScript code and
 - host the app on local development server
@@ -25,7 +25,7 @@ by running the command:
 npm run do-dev
 ```
 
-We may also put it on prod
+We may also build it for prod
 
 - compile our TypeScript code and
 - minify the javascript
@@ -38,7 +38,7 @@ npm run do-prod
 ```
 
 
-Then visit [http://localhost:8080](http://localhost:8080) in your browser. You should see some dummy tasks.
+Then visit [http://localhost:3000](http://localhost:3000) in your browser. You should see some dummy tasks.
 
 ## Getting Help
 
