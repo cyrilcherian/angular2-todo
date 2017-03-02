@@ -5,3 +5,5 @@ npm-debug.log
 !systemjs.config.js
 !dev.js
 !prod.js
+!gulpfile.js
+!dist
